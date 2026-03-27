@@ -1,8 +1,23 @@
 const testimonials = [
-  { name: "Priya Sharma", city: "Delhi", emoji: "👩", text: "This course changed my life! I got promoted at work after improving my English communication skills." },
-  { name: "Rahul Verma", city: "Mumbai", emoji: "👨", text: "195+ videos are so well structured. I completed it in 3 weeks and feel incredibly confident now!" },
-  { name: "Anjali Singh", city: "Bangalore", emoji: "👩‍💼", text: "The e-books are perfect for revision. Best investment I made this year — totally worth it!" },
-]
+  {
+    name: 'Kawaldeep Singh',
+    city: 'Mumbai',
+    emoji: '👨',
+    text: '195+ videos are so well structured. I completed it in 3 weeks and feel incredibly confident now!',
+  },
+  {
+    name: 'Shivani',
+    city: 'Delhi',
+    emoji: '👩',
+    text: 'This course changed my life! I got promoted at work after improving my English communication skills.',
+  },
+  {
+    name: 'Anjali Singh',
+    city: 'Bangalore',
+    emoji: '👩‍💼',
+    text: 'The e-books are perfect for revision. Best investment I made this year — totally worth it!',
+  },
+];
 
 export default function Testimonials({ link }) {
   return (
@@ -18,10 +33,15 @@ export default function Testimonials({ link }) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-10">
         {testimonials.map((t, i) => (
-          <div key={i} className="glass rounded-2xl p-6 sm:p-8 card-hover"
-            style={{ borderTop: '4px solid #8b5cf6' }}>
+          <div
+            key={i}
+            className="glass rounded-2xl p-6 sm:p-8 card-hover"
+            style={{ borderTop: '4px solid #8b5cf6' }}
+          >
             <div className="text-yellow-400 text-sm mb-4">⭐⭐⭐⭐⭐</div>
-            <p className="text-gray-600 italic mb-6 leading-relaxed text-sm sm:text-base">"{t.text}"</p>
+            <p className="text-gray-600 italic mb-6 leading-relaxed text-sm sm:text-base">
+              "{t.text}"
+            </p>
             <div className="flex items-center gap-3">
               <div className="text-3xl">{t.emoji}</div>
               <div>
@@ -34,11 +54,15 @@ export default function Testimonials({ link }) {
       </div>
 
       <div className="text-center">
-        <a href={link} target="_blank" rel="noopener noreferrer"
-          className="glow-btn bg-gradient-to-r from-purple-500 to-pink-500 text-white font-black py-4 px-8 sm:px-12 rounded-2xl text-base sm:text-lg shadow-xl">
-          🎯 Join Them Now — Only ₹149
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="glow-btn bg-gradient-to-r from-purple-500 to-pink-500 text-white font-black py-4 px-8 sm:px-12 rounded-2xl text-base sm:text-lg shadow-xl"
+        >
+          🎯 Join Them Now — Only ₹199
         </a>
       </div>
     </section>
-  )
+  );
 }
