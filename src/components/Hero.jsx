@@ -50,7 +50,7 @@ export default function Hero({ link }) {
 
       {/* Badge */}
       <div className="glass rounded-full px-4 py-2 text-xs sm:text-sm font-semibold text-blue-600 mb-6 inline-block">
-        ⚡ Limited Time Offer — Only ₹149! Only 40 Seats!
+        ⚡ Limited Time Offer — Only ₹199 ! Only 40 Seats!
       </div>
 
       {/* Heading */}
@@ -68,7 +68,7 @@ export default function Hero({ link }) {
       {/* CTA Button */}
       <a href={link} target="_blank" rel="noopener noreferrer"
         className="glow-btn pulse-glow bg-gradient-to-r from-green-500 to-blue-600 text-white font-black py-4 sm:py-5 px-8 sm:px-14 rounded-2xl text-lg sm:text-xl shadow-2xl mb-4">
-        🎓 Get Course for ₹149 Only →
+        🎓 Get Course for ₹199  Only →
       </a>
 
       <p className="text-gray-500 text-xs sm:text-sm">
@@ -81,7 +81,7 @@ export default function Hero({ link }) {
           { target: 195, suffix: '+', label: 'Video Lessons' },
           { target: 37,  suffix: '',  label: 'Chapters' },
           { target: 40,  suffix: '+', label: 'eBooks' },
-          { target: 149, prefix: '₹', label: 'Only Today!' },
+          { target: 199 , prefix: '₹', label: 'Only Today!' },
         ].map((s, i) => (
           <div key={i} className="text-center">
             <div className="text-3xl sm:text-4xl font-black gradient-text">
